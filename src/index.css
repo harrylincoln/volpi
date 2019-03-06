@@ -1,4 +1,16 @@
+@import url('https://fonts.googleapis.com/css?family=Bree+Serif');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+
+html{
+  height: 100%;
+}
 body {
+  min-height: 100%;
+}
+
+body {
+  border-left: 20px solid #EBF0F9;
+  border-right: 20px solid #EBF0F9;
   margin: 0;
   padding: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -8,7 +20,77 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+body:before, body:after {
+  content: "";
+  position: fixed;
+  background: #EBF0F9;
+  left: 0;
+  right: 0;
+  height: 20px;
+  z-index: 9;
+}
+body:before {
+  top: 0;
+}
+body:after {
+  bottom: 0;
+}
+
+hr.thick {
+  height: 2px;
+  border-top: none;
+  border-bottom: 7px solid black;
+  transform: scaleY(0.33);
+  display: inline-block;
+  width: 8%;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.container {
+  padding-top: 40px;
+}
+
+h1, h2, h3 {
+  font-family: 'Bree Serif', serif;
+  color: #505050;
+}
+
+h4, h5, h6, h7, h8, p {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+p, li {
+  color: #505050;
+}
+
+p.details {
+  color: #737373;
+}
+
+
+h1.name-title {
+  font-size: 14px;
+}
+
+.heading-title {
+  width: 75%;
+}
+
+.caption {
+  color: #737373;
+  font-size: 14px;
+  font-style: italic;
+  text-align: center;
+}
+
+.no-list-style {
+  list-style: none
 }

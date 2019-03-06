@@ -1,0 +1,592 @@
+import React from "react";
+import { Row, Col } from 'reactstrap';
+import ImageZoom from 'react-medium-image-zoom'
+// import { Route, Link } from "react-router-dom";
+export const UCA = () => (
+    <div>
+      <h2>Universal claim app</h2>
+      <p className="details">Client: Elsevier <br />
+      Role: Sr UX Designer<br />
+      Elsevier 2018</p>
+      <hr className="thick"/>
+      <Row>
+        <Col xs="12" md="8">
+          <h3>About Elsevier</h3>
+          <p>Elsevier is  an information and analytics company and one of the world's major providers of scientific, technical and medical information. 
+            Elsevier publishes more than 430,000 articles annually in 2,500 journals. Total yearly downloads amount to more than 900 million.</p>
+          <p>Elsevier owns a big number of products which I’m going to refer to as the/an 'ecosystem'</p>
+        </Col>
+        <Col xs="12" md="8">
+          <h3>The Challenge</h3>
+          <p>Every publishing author gets an an author ID after their first academic paper is submitted, accepted and consequently published through any of the Elsevier submission systems.</p>
+          <p>Data about users is not shared across products; the same user can register using different login details on each of Elsevier products.</p>
+          <p>In addition, we can’t automatically connect accounts to IDs as we are dealing with very sensitive information and a bad use of it might cause significant damage to the user's academic career.</p>
+        </Col>
+        <Col xs="12" md="8">
+          <h3>The Brief</h3>
+          <p>We are going to build a universal app for Elsevier users. 
+            In this app they will be able to search for their ID and claim their author profile. 
+            This will allow us to connect all their Elsevier accounts. 
+          </p>
+        </Col>
+        <Col xs="12" md="8">
+          <h3>Gathering requirements</h3>
+          <p>I ran workshops with colleagues from different products, developers, project managers, etc. 
+            Each Elsevier product has its own way of operatating, its own unique users and I needed to understand what other teams worked on in the past.
+            I needed them to tell me what their users were like before I could come up with my own research plan. 
+          </p>
+          <ImageZoom
+            image={{
+              src: `${process.env.PUBLIC_URL}/postit1-small.jpg`,
+              alt: 'Gathering requirements 1',
+              className: 'img',
+              style: { width: '100%' }
+            }}
+            zoomImage={{
+              src: `${process.env.PUBLIC_URL}/postit1.jpg`,
+              alt: 'Gathering requirements 1'
+            }}
+          />
+          <Row style={{marginTop: '1.35rem'}}>
+            <Col xs="12" md="7">
+              <ImageZoom
+              image={{
+                src: `${process.env.PUBLIC_URL}/postit2-small.jpg`,
+                alt: 'Gathering requirements 2',
+                className: 'img',
+                style: { width: '100%' }
+              }}
+              zoomImage={{
+                src: `${process.env.PUBLIC_URL}/postit2.jpg`,
+                alt: 'Gathering requirements 2'
+              }}
+            />
+            </Col>
+            <Col xs="12" md="5">
+              <ImageZoom
+              image={{
+                src: `${process.env.PUBLIC_URL}/postit3-small.jpg`,
+                alt: 'Gathering requirements 3',
+                className: 'img',
+                style: { width: '100%' }
+              }}
+              zoomImage={{
+                src: `${process.env.PUBLIC_URL}/postit3.jpg`,
+                alt: 'Gathering requirements 3'
+              }}
+            />
+            </Col>
+          </Row>
+        </Col>
+        <Col xs="12" md="8" style={{marginTop:'1rem'}}>
+          <h3>Research</h3>
+          <p>As a Sr UX Designer I came up with the following research plan</p>
+
+          <h5>Quantitative research</h5>
+          <ul>
+            <li>Survey - Sent out to 1k of Elsevier users</li>
+            <li>611 published authors participated</li>
+          </ul>
+          <p>The Survey allowed us to quickly target different needs depending on career level.</p>
+              <ImageZoom
+              image={{
+                src: `${process.env.PUBLIC_URL}/users.png`,
+                alt: 'Group of users',
+                className: 'img',
+                style: { width: '100%' }
+              }}
+              zoomImage={{
+                src: `${process.env.PUBLIC_URL}/users.png`,
+                alt: 'Group of users'
+              }}
+            />
+            <p className="caption">Our main groups of users</p>
+            <Row style={{marginTop: '1.35rem'}}>
+              <Col xs="12" md="6">
+                <ImageZoom
+                    image={{
+                      src: `${process.env.PUBLIC_URL}/user-values.png`,
+                      alt: 'User values',
+                      className: 'img',
+                      style: { width: '100%' }
+                    }}
+                    zoomImage={{
+                      src: `${process.env.PUBLIC_URL}/user-values.png`,
+                      alt: 'User values'
+                    }}
+                  />
+                  <p className="caption">User values 1</p>
+              </Col>
+              <Col xs="12" md="6">
+                <ImageZoom
+                image={{
+                  src: `${process.env.PUBLIC_URL}/user-values2.png`,
+                  alt: 'User values 2',
+                  className: 'img',
+                  style: { width: '100%' }
+                }}
+                zoomImage={{
+                  src: `${process.env.PUBLIC_URL}/user-values2.png`,
+                  alt: 'User values 2'
+                }}
+              />
+              <p className="caption">User values 2</p>
+            </Col>
+          </Row>
+          <Col xs="12">
+          <h5>Qualitative research</h5>
+            <ul>
+              <li>Face to face interviews - 20 authors of which 17 have published</li>
+              <li>Remote interviews - 6 authors all of them published</li>
+            </ul>
+            <p>I worked on scripts, prototypes and a report where I put all the research findings</p>
+          </Col>
+          <Col xs="12" md="12">
+            <h3>User flows</h3>
+            <Row>
+              <Col xs="12" md="6">
+                <ImageZoom
+                    image={{
+                      src: `${process.env.PUBLIC_URL}/existing-user-flow-small.png`,
+                      alt: 'Existing user flow',
+                      className: 'img',
+                      style: { width: '100%' }
+                    }}
+                    zoomImage={{
+                      src: `${process.env.PUBLIC_URL}/existing-user-flow.png`,
+                      alt: 'Existing user flow'
+                    }}
+                  />
+              </Col>
+              <Col xs="12" md="6">
+                <ImageZoom
+                image={{
+                  src: `${process.env.PUBLIC_URL}/new-user-flow-small.png`,
+                  alt: 'New user flow',
+                  className: 'img',
+                  style: { width: '100%' }
+                }}
+                zoomImage={{
+                  src: `${process.env.PUBLIC_URL}/new-user-flow.png`,
+                  alt: 'New user flow'
+                }}
+              />
+            </Col>
+          </Row>
+          <p>While I was working on the user flows I realised we had so much unused resources and this is 
+              why, alongside developers, we created a kind of plan to explore everything we thought it might help 
+              us to deliver the best possible experience. Of course, we still needed to meet a deadline but 
+              I’ve always pushed for a way to record all of our ideas, even if they were impossible to action 
+              at the time.</p>
+              <p>So we came up woth three exploratory 'buckets'</p>
+              <p>1. Exploration for MVP<br/>
+              2. Exploration for next release <br />
+              3. Exploration fo future releases
+              </p>
+              <p>This way we knew from the beginning of any technical constraints but also all the possible options 
+                we had and a plan that would go beyond us in case the team members moved projects.</p>
+
+          <h3>Wireframes and prototypes</h3>
+          <p>The idea was to make it quick and easy for the user. Academics are busy people and they don’t 
+            want to be distracted from the work they’re doing when they’re in front of a computer.</p>
+            <p>1. First iteration: making the user participate, 
+              they give us information and we will give them results based on that</p>
+            <p>2. Second iteration: Instead of asking for information before showing results.
+            We show results and then let the users adjust the search by using the filters</p>
+            <p>3. Third and final iteration: </p>
+            <Row>
+              <Col xs="12" md="4">
+                <ImageZoom
+                    image={{
+                      src: `${process.env.PUBLIC_URL}/proto-small.png`,
+                      alt: 'Proto',
+                      className: 'img',
+                      style: { width: '100%' }
+                    }}
+                    zoomImage={{
+                      src: `${process.env.PUBLIC_URL}/proto.png`,
+                      alt: 'Proto'
+                    }}
+                  />
+              </Col>
+              <Col xs="12" md="4">
+                <ImageZoom
+                image={{
+                  src: `${process.env.PUBLIC_URL}/proto2-small.png`,
+                  alt: 'Proto 2',
+                  className: 'img',
+                  style: { width: '100%' }
+                }}
+                zoomImage={{
+                  src: `${process.env.PUBLIC_URL}/proto2.png`,
+                  alt: 'Proto 2'
+                }}
+              />
+            </Col>
+            <Col xs="12" md="4">
+                <ImageZoom
+                image={{
+                  src: `${process.env.PUBLIC_URL}/proto3-small.png`,
+                  alt: 'Proto 3',
+                  className: 'img',
+                  style: { width: '100%' }
+                }}
+                zoomImage={{
+                  src: `${process.env.PUBLIC_URL}/proto3.png`,
+                  alt: 'Proto 3'
+                }}
+              />
+            </Col>
+          </Row>
+          </Col>
+          <Col xs="12">
+            <h3>A/B Testing</h3>
+            <p>We tested different copy, promotional messages and UI.</p>
+            <ImageZoom
+              image={{
+                src: `${process.env.PUBLIC_URL}/abtest-small.png`,
+                alt: 'A/B Test',
+                className: 'img',
+                style: { width: '100%' }
+              }}
+              zoomImage={{
+                src: `${process.env.PUBLIC_URL}/abtest.png`,
+                alt: 'A/B Test'
+              }}
+            />
+            <p>The example above shows how a change of copy and style of a CTA had a massive impact on conversions</p>
+            <p>A cta: ‘Add’ / link visual style</p>
+            <p>B cta ‘It’s me’ / button visual style</p>
+          </Col>
+          <Col xs="12">
+            <h3>Deliverables</h3>
+            <p>I delivered all design specs and paired with developers to make sure everything was implemented the way I designed it.</p>
+            <ImageZoom
+              image={{
+                src: `${process.env.PUBLIC_URL}/deliverables-small.png`,
+                alt: 'Deliverables',
+                className: 'img',
+                style: { width: '100%' }
+              }}
+              zoomImage={{
+                src: `${process.env.PUBLIC_URL}/deliverables.png`,
+                alt: 'Deliverables'
+              }}
+            />
+          </Col>
+        </Col>
+      </Row>
+    </div>
+);
+  
+export const BrowserEx = () => (
+  <div>
+    <h2>Browser Extension</h2>
+    <p className="details">Client: Elsevier <br />
+    Role: Sr UX Designer<br />
+    Elsevier 2018</p>
+    <hr className="thick"/>
+    <Row>
+      <Col xs="12" md="8">
+        <h3>About Mendeley</h3>
+        <p>Mendeley is a PDF and reference management application for desktop and web, produced by Elsevier. 
+          Users can also manage and share research papers, discover research data and collaborate online.</p>
+      </Col>
+      <Col xs="12" md="8">
+        <h3>The challenge</h3>
+        <ul>
+          <li>Update current browser extension, give our users new features.</li>
+        </ul>
+        <p><b>Problems</b></p>
+        <ul>
+          <li>Time: most of researches don’t have enough time to decide immediately 
+            whether an article is relevant to their work or not.</li>
+          <li>Credentials: there’s some literature that researchers can only access 
+            through the institution’s network they work/study in. This means when 
+            they’re not at their workplace they have no way to access some of the content.</li>
+        </ul>
+        <p><b>The brief</b></p>
+        <ul>
+          <li>Allow users to save a batch of articles to their Mendeley library in one go</li>
+          <li>Review what can be done to solve the issue with institutions’ credentials and authentication</li>
+        </ul>
+      </Col>
+      <Col xs="12" md="8">
+        <h3>Gathering requirements</h3>
+        <p>I started with a <b>competitor analysis.</b> This helped me to understand a few things:</p>
+          <p>1. What our competitors were doing<br />
+          <ul className="no-list-style">
+            <li>a: Is there any way we can offer a better experience/solution?</li>
+            <li>b: What would make us stand out?</li>
+          </ul>
+          2. Understand how and why they offer the features they do. Why do they decide to include 
+          (or exclude) features<br />
+          <ul className="no-list-style">
+              <li>a: Because of technical constrains?</li>
+              <li>b: Because they found out through research that users were not interested in that?</li>
+          </ul>
+        </p>
+        <ImageZoom
+              image={{
+                src: `${process.env.PUBLIC_URL}/requirement-small.png`,
+                alt: 'requirement',
+                className: 'img',
+                style: { width: '100%' }
+              }}
+              zoomImage={{
+                src: `${process.env.PUBLIC_URL}/requirement.png`,
+                alt: 'requirement'
+              }}
+            />
+      </Col>
+      <Col xs="12" md="8" style={{marginTop: '1rem'}}>
+        <h3>Personas</h3>
+        <p>Together with the product owner and lead designer we worked on 
+          two main personas. First one belongs to our biggest group of users 
+          (researchers) and the other is the group of users the company wants 
+          to target (librarians)</p>
+          <Row>
+              <Col xs="12" md="4">
+                <ImageZoom
+                    image={{
+                      src: `${process.env.PUBLIC_URL}/persona-small.png`,
+                      alt: 'persona',
+                      className: 'img',
+                      style: { width: '100%' }
+                    }}
+                    zoomImage={{
+                      src: `${process.env.PUBLIC_URL}/persona.png`,
+                      alt: 'persona'
+                    }}
+                  />
+              </Col>
+              <Col xs="12" md="4">
+                <ImageZoom
+                image={{
+                  src: `${process.env.PUBLIC_URL}/persona2-small.png`,
+                  alt: 'persona 2',
+                  className: 'img',
+                  style: { width: '100%' }
+                }}
+                zoomImage={{
+                  src: `${process.env.PUBLIC_URL}/persona2.png`,
+                  alt: 'persona 2'
+                }}
+              />
+            </Col>
+            <Col xs="12" md="4">
+                <ImageZoom
+                image={{
+                  src: `${process.env.PUBLIC_URL}/persona3-small.png`,
+                  alt: 'persona 3',
+                  className: 'img',
+                  style: { width: '100%' }
+                }}
+                zoomImage={{
+                  src: `${process.env.PUBLIC_URL}/persona3.png`,
+                  alt: 'persona 3'
+                }}
+              />
+            </Col>
+          </Row>
+      </Col>
+      <Col xs="12" md="8" style={{marginTop: '1rem'}}>
+        <h5>Empathy maps</h5>
+        <ImageZoom
+          image={{
+            src: `${process.env.PUBLIC_URL}/empathy-small.jpg`,
+            alt: 'empathy',
+            className: 'img',
+            style: { width: '100%' }
+          }}
+          zoomImage={{
+            src: `${process.env.PUBLIC_URL}/empathy.jpg`,
+            alt: 'empathy'
+          }}
+        />
+        <p className="caption">Researcher</p>
+      </Col>
+      <Col xs="12" md="8" style={{marginTop: '1rem'}}>
+        <h5>Scenarios and User journeys</h5>
+        <ImageZoom
+          image={{
+            src: `${process.env.PUBLIC_URL}/main-persona-small.jpg`,
+            alt: 'main-persona',
+            className: 'img',
+            style: { width: '100%' }
+          }}
+          zoomImage={{
+            src: `${process.env.PUBLIC_URL}/main-persona.jpg`,
+            alt: 'main-persona'
+          }}
+        />
+        <p className="caption">Scenario for main persona (researcher)</p>
+      </Col>
+      <Col xs="12" md="8">
+          <p>We did a small workshop with the product owner and tech lead, 
+            we created a typical day in a researchers life. Lots of questions 
+            came up from this exercise. From technical to legal stuff, 
+            each one of us left the room with homework to do:</p>
+            <ul>
+              <li>Product: find out about legal compliance, for example 
+                institutions giving permission through proxies.</li>
+                <li>Technical: is there any short term solution to the authentication 
+                  and credentials issue? How long would it take to have a beta version 
+                  up and running?</li>
+                <li>UX: Come up with a plan to validate all these implications are true.
+                  We know not having access to papers outside the institution network is 
+                  an issue but it is that the main use case?</li>
+            </ul>
+      </Col>
+      <Col xs="12" md="8">
+        <h5>Scernario sketches from workshop</h5>
+        <Row>
+            <Col xs="12" md="6">
+              <ImageZoom
+                  image={{
+                    src: `${process.env.PUBLIC_URL}/scenario-small.jpg`,
+                    alt: 'Scenario',
+                    className: 'img',
+                    style: { width: '100%' }
+                  }}
+                  zoomImage={{
+                    src: `${process.env.PUBLIC_URL}/scenario-flow.jpg`,
+                    alt: 'Scenario'
+                  }}
+                />
+            </Col>
+            <Col xs="12" md="6">
+              <ImageZoom
+              image={{
+                src: `${process.env.PUBLIC_URL}/scenario2-small.jpg`,
+                alt: 'scenario 2',
+                className: 'img',
+                style: { width: '100%' }
+              }}
+              zoomImage={{
+                src: `${process.env.PUBLIC_URL}/scenario2.jpg`,
+                alt: 'scenario 2'
+              }}
+            />
+            </Col>
+          </Row>
+      </Col>
+      <Col xs="12" md="8" style={{marginTop: '1rem'}}>
+        <h5>Scenarios documentation</h5>
+        <Row>
+            <Col xs="12" md="4">
+              <ImageZoom
+                  image={{
+                    src: `${process.env.PUBLIC_URL}/scenario-docs.jpg`,
+                    alt: 'Scenario-docs',
+                    className: 'img',
+                    style: { width: '100%' }
+                  }}
+                  zoomImage={{
+                    src: `${process.env.PUBLIC_URL}/scenario-docs.jpg`,
+                    alt: 'Scenario-docs'
+                  }}
+                />
+            </Col>
+            <Col xs="12" md="4">
+              <ImageZoom
+              image={{
+                src: `${process.env.PUBLIC_URL}/scenario-docs2.jpg`,
+                alt: 'scenario-docs 2',
+                className: 'img',
+                style: { width: '100%' }
+              }}
+              zoomImage={{
+                src: `${process.env.PUBLIC_URL}/scenario-docs2.jpg`,
+                alt: 'scenario-docs 2'
+              }}
+            />
+            </Col>
+            <Col xs="12" md="4">
+              <ImageZoom
+              image={{
+                src: `${process.env.PUBLIC_URL}/scenario-docs3.jpg`,
+                alt: 'scenario-docs 3',
+                className: 'img',
+                style: { width: '100%' }
+              }}
+              zoomImage={{
+                src: `${process.env.PUBLIC_URL}/scenario-docs3.jpg`,
+                alt: 'scenario-docs 3'
+              }}
+            />
+            </Col>
+            <Col xs="12" md="4">
+              <ImageZoom
+              image={{
+                src: `${process.env.PUBLIC_URL}/scenario-docs4.jpg`,
+                alt: 'scenario-docs 4',
+                className: 'img',
+                style: { width: '100%' }
+              }}
+              zoomImage={{
+                src: `${process.env.PUBLIC_URL}/scenario-docs4.jpg`,
+                alt: 'scenario-docs 4'
+              }}
+            />
+            </Col>
+            <Col xs="12" md="4">
+              <ImageZoom
+              image={{
+                src: `${process.env.PUBLIC_URL}/scenario-docs5.jpg`,
+                alt: 'scenario-docs 5',
+                className: 'img',
+                style: { width: '100%' }
+              }}
+              zoomImage={{
+                src: `${process.env.PUBLIC_URL}/scenario-docs5.jpg`,
+                alt: 'scenario-docs 5'
+              }}
+            />
+            </Col>
+            <Col xs="12" md="4">
+              <ImageZoom
+              image={{
+                src: `${process.env.PUBLIC_URL}/scenario-docs6.jpg`,
+                alt: 'scenario-docs 6',
+                className: 'img',
+                style: { width: '100%' }
+              }}
+              zoomImage={{
+                src: `${process.env.PUBLIC_URL}/scenario-docs6.jpg`,
+                alt: 'scenario-docs 6'
+              }}
+            />
+            </Col>
+          </Row>
+      </Col>
+      <Col xs="12" md="8">
+        <h3>Research plan</h3>
+        <p>There was a first release of this browser extension so I thought of 
+        going back to previous research that was done for the current version. 
+        Of course, all these research was outdated so I had to come up with a new plan.</p>
+
+        <p>We tested the first iteration with 9 people from different career levels, 
+          Mendeley users and non Mendeley users</p>
+
+        <p>After having a more or less clear idea of what we can and we can’t 
+          do I started working on a few sketches, wireframes.</p>
+          <ImageZoom
+              image={{
+                src: `${process.env.PUBLIC_URL}/wireframes-small.jpg`,
+                alt: 'scenario-docs 6',
+                className: 'img',
+                style: { width: '100%' }
+              }}
+              zoomImage={{
+                src: `${process.env.PUBLIC_URL}/wireframes.jpg`,
+                alt: 'scenario-docs 6'
+              }}
+            />
+      </Col>
+      <Col xs="12" md="8" style={{marginTop: '1rem'}}>
+        <h3>Deliverables</h3>
+      </Col>
+    </Row>
+  </div>
+);
