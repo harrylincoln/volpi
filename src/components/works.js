@@ -93,13 +93,13 @@ export const UCA = () => (
               <ImageZoom
               shouldReplaceImage="true"
               image={{
-                src: `${process.env.PUBLIC_URL}/users.png`,
+                src: `${process.env.PUBLIC_URL}/users.jpg`,
                 alt: 'Group of users',
                 className: 'img',
                 style: { width: '100%' }
               }}
               zoomImage={{
-                src: `${process.env.PUBLIC_URL}/users.png`,
+                src: `${process.env.PUBLIC_URL}/users.jpg`,
                 alt: 'Group of users'
               }}
             />
@@ -109,13 +109,13 @@ export const UCA = () => (
                 <ImageZoom
                 shouldReplaceImage="true"
                     image={{
-                      src: `${process.env.PUBLIC_URL}/user-values.png`,
+                      src: `${process.env.PUBLIC_URL}/user-values.jpg`,
                       alt: 'User values',
                       className: 'img',
                       style: { width: '100%' }
                     }}
                     zoomImage={{
-                      src: `${process.env.PUBLIC_URL}/user-values.png`,
+                      src: `${process.env.PUBLIC_URL}/user-values.jpg`,
                       alt: 'User values'
                     }}
                   />
@@ -125,13 +125,13 @@ export const UCA = () => (
                 <ImageZoom
                 shouldReplaceImage="true"
                 image={{
-                  src: `${process.env.PUBLIC_URL}/user-values2.png`,
+                  src: `${process.env.PUBLIC_URL}/user-values2.jpg`,
                   alt: 'User values 2',
                   className: 'img',
                   style: { width: '100%' }
                 }}
                 zoomImage={{
-                  src: `${process.env.PUBLIC_URL}/user-values2.png`,
+                  src: `${process.env.PUBLIC_URL}/user-values2.jpg`,
                   alt: 'User values 2'
                 }}
               />
@@ -153,13 +153,13 @@ export const UCA = () => (
                 <ImageZoom
                 shouldReplaceImage="true"
                     image={{
-                      src: `${process.env.PUBLIC_URL}/existing-user-flow-small.png`,
+                      src: `${process.env.PUBLIC_URL}/existing-user-flow-small.jpg`,
                       alt: 'Existing user flow',
                       className: 'img',
                       style: { width: '100%' }
                     }}
                     zoomImage={{
-                      src: `${process.env.PUBLIC_URL}/existing-user-flow.png`,
+                      src: `${process.env.PUBLIC_URL}/existing-user-flow.jpg`,
                       alt: 'Existing user flow'
                     }}
                   />
@@ -168,13 +168,13 @@ export const UCA = () => (
                 <ImageZoom
                 shouldReplaceImage="true"
                 image={{
-                  src: `${process.env.PUBLIC_URL}/new-user-flow-small.png`,
+                  src: `${process.env.PUBLIC_URL}/new-user-flow-small.jpg`,
                   alt: 'New user flow',
                   className: 'img',
                   style: { width: '100%' }
                 }}
                 zoomImage={{
-                  src: `${process.env.PUBLIC_URL}/new-user-flow.png`,
+                  src: `${process.env.PUBLIC_URL}/new-user-flow.jpg`,
                   alt: 'New user flow'
                 }}
               />
@@ -206,13 +206,13 @@ export const UCA = () => (
                 <ImageZoom
                 shouldReplaceImage="true"
                     image={{
-                      src: `${process.env.PUBLIC_URL}/proto-small.png`,
+                      src: `${process.env.PUBLIC_URL}/proto-small.jpg`,
                       alt: 'Proto',
                       className: 'img',
                       style: { width: '100%' }
                     }}
                     zoomImage={{
-                      src: `${process.env.PUBLIC_URL}/proto.png`,
+                      src: `${process.env.PUBLIC_URL}/proto.jpg`,
                       alt: 'Proto'
                     }}
                   />
@@ -221,13 +221,13 @@ export const UCA = () => (
                 <ImageZoom
                 shouldReplaceImage="true"
                 image={{
-                  src: `${process.env.PUBLIC_URL}/proto2-small.png`,
+                  src: `${process.env.PUBLIC_URL}/proto2-small.jpg`,
                   alt: 'Proto 2',
                   className: 'img',
                   style: { width: '100%' }
                 }}
                 zoomImage={{
-                  src: `${process.env.PUBLIC_URL}/proto2.png`,
+                  src: `${process.env.PUBLIC_URL}/proto2.jpg`,
                   alt: 'Proto 2'
                 }}
               />
@@ -236,13 +236,13 @@ export const UCA = () => (
                 <ImageZoom
                 shouldReplaceImage="true"
                 image={{
-                  src: `${process.env.PUBLIC_URL}/proto3-small.png`,
+                  src: `${process.env.PUBLIC_URL}/proto3-small.jpg`,
                   alt: 'Proto 3',
                   className: 'img',
                   style: { width: '100%' }
                 }}
                 zoomImage={{
-                  src: `${process.env.PUBLIC_URL}/proto3.png`,
+                  src: `${process.env.PUBLIC_URL}/proto3.jpg`,
                   alt: 'Proto 3'
                 }}
               />
@@ -255,13 +255,13 @@ export const UCA = () => (
             <ImageZoom
             shouldReplaceImage="true"
               image={{
-                src: `${process.env.PUBLIC_URL}/abtest-small.png`,
+                src: `${process.env.PUBLIC_URL}/abtest-small.jpg`,
                 alt: 'A/B Test',
                 className: 'img',
                 style: { width: '100%' }
               }}
               zoomImage={{
-                src: `${process.env.PUBLIC_URL}/abtest.png`,
+                src: `${process.env.PUBLIC_URL}/abtest.jpg`,
                 alt: 'A/B Test'
               }}
             />
@@ -275,13 +275,13 @@ export const UCA = () => (
             <ImageZoom
             shouldReplaceImage="true"
               image={{
-                src: `${process.env.PUBLIC_URL}/deliverables-small.png`,
+                src: `${process.env.PUBLIC_URL}/deliverables-small.jpg`,
                 alt: 'Deliverables',
                 className: 'img',
                 style: { width: '100%' }
               }}
               zoomImage={{
-                src: `${process.env.PUBLIC_URL}/deliverables.png`,
+                src: `${process.env.PUBLIC_URL}/deliverables.jpg`,
                 alt: 'Deliverables'
               }}
             />
@@ -341,13 +341,13 @@ export const BrowserEx = () => (
         <ImageZoom
         shouldReplaceImage="true"
               image={{
-                src: `${process.env.PUBLIC_URL}/requirement-small.png`,
+                src: `${process.env.PUBLIC_URL}/requirement-small.jpg`,
                 alt: 'requirement',
                 className: 'img',
                 style: { width: '100%' }
               }}
               zoomImage={{
-                src: `${process.env.PUBLIC_URL}/requirement.png`,
+                src: `${process.env.PUBLIC_URL}/requirement.jpg`,
                 alt: 'requirement'
               }}
             />
@@ -363,13 +363,13 @@ export const BrowserEx = () => (
                 <ImageZoom
                 shouldReplaceImage="true"
                     image={{
-                      src: `${process.env.PUBLIC_URL}/persona-small.png`,
+                      src: `${process.env.PUBLIC_URL}/persona-small.jpg`,
                       alt: 'persona',
                       className: 'img',
                       style: { width: '100%' }
                     }}
                     zoomImage={{
-                      src: `${process.env.PUBLIC_URL}/persona.png`,
+                      src: `${process.env.PUBLIC_URL}/persona.jpg`,
                       alt: 'persona'
                     }}
                   />
@@ -378,13 +378,13 @@ export const BrowserEx = () => (
                 <ImageZoom
                 shouldReplaceImage="true"
                 image={{
-                  src: `${process.env.PUBLIC_URL}/persona2-small.png`,
+                  src: `${process.env.PUBLIC_URL}/persona2-small.jpg`,
                   alt: 'persona 2',
                   className: 'img',
                   style: { width: '100%' }
                 }}
                 zoomImage={{
-                  src: `${process.env.PUBLIC_URL}/persona2.png`,
+                  src: `${process.env.PUBLIC_URL}/persona2.jpg`,
                   alt: 'persona 2'
                 }}
               />
@@ -393,13 +393,13 @@ export const BrowserEx = () => (
                 <ImageZoom
                 shouldReplaceImage="true"
                 image={{
-                  src: `${process.env.PUBLIC_URL}/persona3-small.png`,
+                  src: `${process.env.PUBLIC_URL}/persona3-small.jpg`,
                   alt: 'persona 3',
                   className: 'img',
                   style: { width: '100%' }
                 }}
                 zoomImage={{
-                  src: `${process.env.PUBLIC_URL}/persona3.png`,
+                  src: `${process.env.PUBLIC_URL}/persona3.jpg`,
                   alt: 'persona 3'
                 }}
               />
