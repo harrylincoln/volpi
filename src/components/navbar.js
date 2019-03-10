@@ -37,7 +37,7 @@ export default class NavBar extends React.Component {
               {/* Mobile nav */}
               <Nav className="ml-auto d-xs-block d-md-none" navbar>
                 <NavItem>
-                  <NavLink href="/">Universal Claim App</NavLink>
+                  <NavLink href="/universal-claim-app">Universal Claim App</NavLink>
                 </NavItem>
                 <NavItem>
                   <NavLink href="/browser-extension">Browser extension</NavLink>
@@ -69,13 +69,13 @@ export default class NavBar extends React.Component {
                   </DropdownToggle>
                   <DropdownMenu right>
                     <DropdownItem>
-                    <NavItem>
-                      <Link to="/">Universal Claim App</Link>
+                    <NavItem className="nav-drop-item">
+                      <Link to="/universal-claim-app">Universal Claim App</Link>
                     </NavItem>
-                    <NavItem>
+                    <NavItem className="nav-drop-item">
                       <Link to="/browser-extension">Browser Extension</Link>
                     </NavItem>
-                    <NavItem>
+                    <NavItem className="nav-drop-item">
                       <Link to="/orange-cash">Orange Cash</Link>
                     </NavItem>
                     </DropdownItem>

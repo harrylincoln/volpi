@@ -1,6 +1,13 @@
 import React from "react";
 import { Row, Col } from 'reactstrap';
 import ImageZoom from 'react-medium-image-zoom'
+export const Me = () => (
+  <div style={{paddingBottom: '6rem'}}>
+    <h2>Hi there, I’m Anabella. <br />
+    User experience designer based in London.</h2>
+  </div>
+);
+
 export const UCA = () => (
     <div>
       <h2>Universal claim app</h2>
@@ -15,20 +22,20 @@ export const UCA = () => (
             Elsevier publishes more than 430,000 articles annually in 2,500 journals. Total yearly downloads amount to more than 900 million.</p>
           <p>Elsevier owns a big number of products which I’m going to refer to as the/an 'ecosystem'</p>
         </Col>
-        <Col xs="12" md="8">
+        <Col xs="12" md="8" className="section-block">
           <h3>The Challenge</h3>
           <p>Every publishing author gets an an author ID after their first academic paper is submitted, accepted and consequently published through any of the Elsevier submission systems.</p>
           <p>Data about users is not shared across products; the same user can register using different login details on each of Elsevier products.</p>
           <p>In addition, we can’t automatically connect accounts to IDs as we are dealing with very sensitive information and a bad use of it might cause significant damage to the user's academic career.</p>
         </Col>
-        <Col xs="12" md="8">
+        <Col xs="12" md="8" className="section-block">
           <h3>The brief</h3>
           <p>We are going to build a universal app for Elsevier users. 
             In this app they will be able to search for their ID and claim their author profile. 
             This will allow us to connect all their Elsevier accounts. 
           </p>
         </Col>
-        <Col xs="12" md="8">
+        <Col xs="12" md="8" className="section-block">
           <h3>Gathering requirements</h3>
           <p>I ran workshops with colleagues from different products, developers, project managers, etc. 
             Each Elsevier product has its own way of operatating, its own unique users and I needed to understand what other teams worked on in the past.
@@ -80,7 +87,7 @@ export const UCA = () => (
             </Col>
           </Row>
         </Col>
-        <Col xs="12" md="8" style={{marginTop:'1rem'}}>
+        <Col xs="12" md="8" className="section-block">
           <h3>Research</h3>
           <p>As a Sr UX Designer I came up with the following research plan</p>
 
@@ -138,7 +145,7 @@ export const UCA = () => (
               <p className="caption">User values 2</p>
             </Col>
           </Row>
-          <Col xs="12">
+          <Col xs="12" className="section-block">
           <h5>Qualitative research</h5>
             <ul>
               <li>Face to face interviews - 20 authors of which 17 have published</li>
@@ -146,7 +153,7 @@ export const UCA = () => (
             </ul>
             <p>I worked on scripts, prototypes and a report where I put all the research findings</p>
           </Col>
-          <Col xs="12" md="12">
+          <Col xs="12" md="12" className="section-block">
             <h3>User flows</h3>
             <Row>
               <Col xs="12" md="6">
@@ -192,7 +199,8 @@ export const UCA = () => (
               </p>
               <p>This way we knew from the beginning of any technical constraints but also all the possible options 
                 we had and a plan that would go beyond us in case the team members moved projects.</p>
-
+          </Col>
+          <Col xs="12" md="12" className="section-block">
           <h3>Wireframes and prototypes</h3>
           <p>The idea was to make it quick and easy for the user. Academics are busy people and they don’t 
             want to be distracted from the work they’re doing when they’re in front of a computer.</p>
@@ -249,7 +257,7 @@ export const UCA = () => (
             </Col>
           </Row>
           </Col>
-          <Col xs="12">
+          <Col xs="12" className="section-block">
             <h3>A/B Testing</h3>
             <p>We tested different copy, promotional messages and UI.</p>
             <ImageZoom
@@ -269,7 +277,7 @@ export const UCA = () => (
             <p>A cta: ‘Add’ / link visual style</p>
             <p>B cta ‘It’s me’ / button visual style</p>
           </Col>
-          <Col xs="12">
+          <Col xs="12" className="section-block">
             <h3>Deliverables</h3>
             <p>I delivered all design specs and paired with developers to make sure everything was implemented the way I designed it.</p>
             <ImageZoom
@@ -304,7 +312,7 @@ export const BrowserEx = () => (
         <p>Mendeley is a PDF and reference management application for desktop and web, produced by Elsevier. 
           Users can also manage and share research papers, discover research data and collaborate online.</p>
       </Col>
-      <Col xs="12" md="8">
+      <Col xs="12" md="8" className="section-block">
         <h3>The challenge</h3>
         <ul>
           <li>Update current browser extension, give our users new features.</li>
@@ -323,7 +331,7 @@ export const BrowserEx = () => (
           <li>Review what can be done to solve the issue with institutions’ credentials and authentication</li>
         </ul>
       </Col>
-      <Col xs="12" md="8">
+      <Col xs="12" md="8" className="section-block">
         <h3>Gathering requirements</h3>
         <p>I started with a <b>competitor analysis.</b> This helped me to understand a few things:</p>
           <p>1. What our competitors were doing<br />
@@ -339,20 +347,20 @@ export const BrowserEx = () => (
           </ul>
         </p>
         <ImageZoom
-        shouldReplaceImage={true}
-              image={{
-                src: `${process.env.PUBLIC_URL}/requirement-small.jpg`,
-                alt: 'requirement',
-                className: 'img',
-                style: { width: '100%' }
-              }}
-              zoomImage={{
-                src: `${process.env.PUBLIC_URL}/requirement.jpg`,
-                alt: 'requirement'
-              }}
-            />
+          shouldReplaceImage={true}
+          image={{
+            src: `${process.env.PUBLIC_URL}/requirement-small.jpg`,
+            alt: 'requirement',
+            className: 'img',
+            style: { width: '100%' }
+          }}
+          zoomImage={{
+            src: `${process.env.PUBLIC_URL}/requirement.jpg`,
+            alt: 'requirement'
+          }}
+        />
       </Col>
-      <Col xs="12" md="8" style={{marginTop: '1rem'}}>
+      <Col xs="12" md="8" className="section-block">
         <h3>Personas</h3>
         <p>Together with the product owner and lead designer we worked on 
           two main personas. First one belongs to our biggest group of users 
@@ -406,7 +414,7 @@ export const BrowserEx = () => (
             </Col>
           </Row>
       </Col>
-      <Col xs="12" md="8" style={{marginTop: '1rem'}}>
+      <Col xs="12" md="8" className="section-block">
         <h5>Empathy maps</h5>
         <ImageZoom
         shouldReplaceImage={true}
@@ -423,7 +431,7 @@ export const BrowserEx = () => (
         />
         <p className="caption">Researcher</p>
       </Col>
-      <Col xs="12" md="8" style={{marginTop: '1rem'}}>
+      <Col xs="12" md="8" className="section-block">
         <h5>Scenarios and User journeys</h5>
         <ImageZoom
         shouldReplaceImage={true}
@@ -440,7 +448,7 @@ export const BrowserEx = () => (
         />
         <p className="caption">Scenario for main persona (researcher)</p>
       </Col>
-      <Col xs="12" md="8">
+      <Col xs="12" md="8" className="section-block">
           <p>We did a small workshop with the product owner and tech lead, 
             we created a typical day in a researchers life. Lots of questions 
             came up from this exercise. From technical to legal stuff, 
@@ -456,7 +464,7 @@ export const BrowserEx = () => (
                   an issue but it is that the main use case?</li>
             </ul>
       </Col>
-      <Col xs="12" md="8">
+      <Col xs="12" md="8" className="section-block">
         <h5>Scernario sketches from workshop</h5>
         <Row>
             <Col xs="12" md="6">
@@ -491,7 +499,7 @@ export const BrowserEx = () => (
             </Col>
           </Row>
       </Col>
-      <Col xs="12" md="8" style={{marginTop: '1rem'}}>
+      <Col xs="12" md="8" className="section-block">
         <h5>Scenarios documentation</h5>
         <Row>
             <Col xs="12" md="4">
@@ -586,7 +594,7 @@ export const BrowserEx = () => (
             </Col>
           </Row>
       </Col>
-      <Col xs="12" md="8">
+      <Col xs="12" md="8" className="section-block">
         <h3>Research plan</h3>
         <p>There was a first release of this browser extension so I thought of 
         going back to previous research that was done for the current version. 
@@ -611,9 +619,6 @@ export const BrowserEx = () => (
               }}
             />
       </Col>
-      <Col xs="12" md="8" style={{marginTop: '1rem'}}>
-        <h3>Deliverables</h3>
-      </Col>
     </Row>
   </div>
 );
@@ -632,7 +637,7 @@ export const Orange = () => (
           users to make payments directly from their mobile without the need of 
           using their ‘real’ credit cards. </p>
       </Col>
-      <Col xs="12" md="8">
+      <Col xs="12" md="8" className="section-block">
         <h3>Gathering requirements</h3>
         <p>During the initial meetings with the team I realised this was going to be 
           too big to handle as a whole. We had four months to deliver a first mvp 
@@ -681,7 +686,7 @@ export const Orange = () => (
             who was part of the project worked on their part at the same time I was 
             delivering the first sketches. </p>
       </Col>
-      <Col xs="12" md="8">
+      <Col xs="12" md="8" className="section-block">
         <h3>Testing</h3>
         <p>As this app would only be available in France and Spain, 
           I only participated on the prototype and script making and not facilitating the sessions.<br/>
@@ -700,7 +705,7 @@ export const Orange = () => (
             }}
           />
       </Col>
-      <Col xs="12" md="8">
+      <Col xs="12" md="8" className="section-block">
         <h3>Visuals</h3>
         <p>I worked on all the key screens of the app. Created a visual language that I 
           put in guidelines documents so other designers can help out in case we needed 
