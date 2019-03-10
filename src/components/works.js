@@ -705,23 +705,18 @@ export const Orange = () => (
         <p>I worked on all the key screens of the app. Created a visual language that I 
           put in guidelines documents so other designers can help out in case we needed 
           a hand (and yes, we did)</p>
-          <Row style={{marginBottom:'1rem'}}>
-            <Col xs="12" md="4">
+          <Row>
+            <Col xs="12" md="4" style={{marginBottom:'1rem'}}>
               <ImageZoom
-                shouldReplaceImage="true"
                   image={{
-                    src: `${process.env.PUBLIC_URL}/ikea-small.jpg`,
+                    src: `${process.env.PUBLIC_URL}/hand.jpg`,
                     alt: 'ikea',
                     className: 'img',
                     style: { width: '100%' }
                   }}
-                  zoomImage={{
-                    src: `${process.env.PUBLIC_URL}/ikea.jpg`,
-                    alt: 'ikea'
-                  }}
               />
             </Col>
-            <Col xs="12" md="4">
+            <Col xs="12" md="4" style={{marginBottom:'1rem'}}>
               <ImageZoom
                 shouldReplaceImage="true"
                   image={{
@@ -736,7 +731,7 @@ export const Orange = () => (
                   }}
               />
             </Col>
-            <Col xs="12" md="4">
+            <Col xs="12" md="4" style={{marginBottom:'1rem'}}>
               <ImageZoom
                 shouldReplaceImage="true"
                   image={{
@@ -755,6 +750,7 @@ export const Orange = () => (
           <p>For the illustrations I had a few meetings with a professional illustrator 
             and we agreed on the style</p>
             <ImageZoom
+            style={{marginBottom:'1rem'}}
                 shouldReplaceImage="true"
                   image={{
                     src: `${process.env.PUBLIC_URL}/bonjour-small.jpg`,
@@ -768,7 +764,7 @@ export const Orange = () => (
                   }}
               />
           <Row style={{marginTop:'1rem'}}>
-            <Col xs="12" md="7">
+            <Col xs="12" md="7" style={{marginBottom:'1rem'}}>
               <ImageZoom
                 shouldReplaceImage="true"
                   image={{
@@ -783,7 +779,7 @@ export const Orange = () => (
                   }}
               />
             </Col>
-            <Col xs="12" md="5">
+            <Col xs="12" md="5" style={{marginBottom:'1rem'}}>
               <ImageZoom
                 shouldReplaceImage="true"
                   image={{
@@ -799,8 +795,8 @@ export const Orange = () => (
               />
             </Col>  
           </Row>
-          <Row style={{marginTop:'1rem'}}>
-            <Col xs="12" md="5">
+          <Row>
+            <Col xs="12" md="5" style={{marginBottom:'1rem'}}>
               <ImageZoom
                 shouldReplaceImage="true"
                   image={{
@@ -815,7 +811,7 @@ export const Orange = () => (
                   }}
               />
             </Col>
-            <Col xs="12" md="7">
+            <Col xs="12" md="7" style={{marginBottom:'1rem'}}>
               <ImageZoom
                 shouldReplaceImage="true"
                   image={{
