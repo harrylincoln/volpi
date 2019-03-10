@@ -1,7 +1,6 @@
 import React from "react";
 import { Row, Col } from 'reactstrap';
 import ImageZoom from 'react-medium-image-zoom'
-// import { Route, Link } from "react-router-dom";
 export const UCA = () => (
     <div>
       <h2>Universal claim app</h2>
@@ -23,7 +22,7 @@ export const UCA = () => (
           <p>In addition, we can’t automatically connect accounts to IDs as we are dealing with very sensitive information and a bad use of it might cause significant damage to the user's academic career.</p>
         </Col>
         <Col xs="12" md="8">
-          <h3>The Brief</h3>
+          <h3>The brief</h3>
           <p>We are going to build a universal app for Elsevier users. 
             In this app they will be able to search for their ID and claim their author profile. 
             This will allow us to connect all their Elsevier accounts. 
@@ -36,6 +35,7 @@ export const UCA = () => (
             I needed them to tell me what their users were like before I could come up with my own research plan. 
           </p>
           <ImageZoom
+          shouldReplaceImage="true"
             image={{
               src: `${process.env.PUBLIC_URL}/postit1-small.jpg`,
               alt: 'Gathering requirements 1',
@@ -50,6 +50,7 @@ export const UCA = () => (
           <Row style={{marginTop: '1.35rem'}}>
             <Col xs="12" md="7">
               <ImageZoom
+              shouldReplaceImage="true"
               image={{
                 src: `${process.env.PUBLIC_URL}/postit2-small.jpg`,
                 alt: 'Gathering requirements 2',
@@ -64,6 +65,7 @@ export const UCA = () => (
             </Col>
             <Col xs="12" md="5">
               <ImageZoom
+              shouldReplaceImage="true"
               image={{
                 src: `${process.env.PUBLIC_URL}/postit3-small.jpg`,
                 alt: 'Gathering requirements 3',
@@ -89,6 +91,7 @@ export const UCA = () => (
           </ul>
           <p>The Survey allowed us to quickly target different needs depending on career level.</p>
               <ImageZoom
+              shouldReplaceImage="true"
               image={{
                 src: `${process.env.PUBLIC_URL}/users.png`,
                 alt: 'Group of users',
@@ -104,6 +107,7 @@ export const UCA = () => (
             <Row style={{marginTop: '1.35rem'}}>
               <Col xs="12" md="6">
                 <ImageZoom
+                shouldReplaceImage="true"
                     image={{
                       src: `${process.env.PUBLIC_URL}/user-values.png`,
                       alt: 'User values',
@@ -119,6 +123,7 @@ export const UCA = () => (
               </Col>
               <Col xs="12" md="6">
                 <ImageZoom
+                shouldReplaceImage="true"
                 image={{
                   src: `${process.env.PUBLIC_URL}/user-values2.png`,
                   alt: 'User values 2',
@@ -146,6 +151,7 @@ export const UCA = () => (
             <Row>
               <Col xs="12" md="6">
                 <ImageZoom
+                shouldReplaceImage="true"
                     image={{
                       src: `${process.env.PUBLIC_URL}/existing-user-flow-small.png`,
                       alt: 'Existing user flow',
@@ -160,6 +166,7 @@ export const UCA = () => (
               </Col>
               <Col xs="12" md="6">
                 <ImageZoom
+                shouldReplaceImage="true"
                 image={{
                   src: `${process.env.PUBLIC_URL}/new-user-flow-small.png`,
                   alt: 'New user flow',
@@ -197,6 +204,7 @@ export const UCA = () => (
             <Row>
               <Col xs="12" md="4">
                 <ImageZoom
+                shouldReplaceImage="true"
                     image={{
                       src: `${process.env.PUBLIC_URL}/proto-small.png`,
                       alt: 'Proto',
@@ -211,6 +219,7 @@ export const UCA = () => (
               </Col>
               <Col xs="12" md="4">
                 <ImageZoom
+                shouldReplaceImage="true"
                 image={{
                   src: `${process.env.PUBLIC_URL}/proto2-small.png`,
                   alt: 'Proto 2',
@@ -225,6 +234,7 @@ export const UCA = () => (
             </Col>
             <Col xs="12" md="4">
                 <ImageZoom
+                shouldReplaceImage="true"
                 image={{
                   src: `${process.env.PUBLIC_URL}/proto3-small.png`,
                   alt: 'Proto 3',
@@ -243,6 +253,7 @@ export const UCA = () => (
             <h3>A/B Testing</h3>
             <p>We tested different copy, promotional messages and UI.</p>
             <ImageZoom
+            shouldReplaceImage="true"
               image={{
                 src: `${process.env.PUBLIC_URL}/abtest-small.png`,
                 alt: 'A/B Test',
@@ -262,6 +273,7 @@ export const UCA = () => (
             <h3>Deliverables</h3>
             <p>I delivered all design specs and paired with developers to make sure everything was implemented the way I designed it.</p>
             <ImageZoom
+            shouldReplaceImage="true"
               image={{
                 src: `${process.env.PUBLIC_URL}/deliverables-small.png`,
                 alt: 'Deliverables',
@@ -327,6 +339,7 @@ export const BrowserEx = () => (
           </ul>
         </p>
         <ImageZoom
+        shouldReplaceImage="true"
               image={{
                 src: `${process.env.PUBLIC_URL}/requirement-small.png`,
                 alt: 'requirement',
@@ -348,6 +361,7 @@ export const BrowserEx = () => (
           <Row>
               <Col xs="12" md="4">
                 <ImageZoom
+                shouldReplaceImage="true"
                     image={{
                       src: `${process.env.PUBLIC_URL}/persona-small.png`,
                       alt: 'persona',
@@ -362,6 +376,7 @@ export const BrowserEx = () => (
               </Col>
               <Col xs="12" md="4">
                 <ImageZoom
+                shouldReplaceImage="true"
                 image={{
                   src: `${process.env.PUBLIC_URL}/persona2-small.png`,
                   alt: 'persona 2',
@@ -376,6 +391,7 @@ export const BrowserEx = () => (
             </Col>
             <Col xs="12" md="4">
                 <ImageZoom
+                shouldReplaceImage="true"
                 image={{
                   src: `${process.env.PUBLIC_URL}/persona3-small.png`,
                   alt: 'persona 3',
@@ -393,6 +409,7 @@ export const BrowserEx = () => (
       <Col xs="12" md="8" style={{marginTop: '1rem'}}>
         <h5>Empathy maps</h5>
         <ImageZoom
+        shouldReplaceImage="true"
           image={{
             src: `${process.env.PUBLIC_URL}/empathy-small.jpg`,
             alt: 'empathy',
@@ -409,6 +426,7 @@ export const BrowserEx = () => (
       <Col xs="12" md="8" style={{marginTop: '1rem'}}>
         <h5>Scenarios and User journeys</h5>
         <ImageZoom
+        shouldReplaceImage="true"
           image={{
             src: `${process.env.PUBLIC_URL}/main-persona-small.jpg`,
             alt: 'main-persona',
@@ -443,6 +461,7 @@ export const BrowserEx = () => (
         <Row>
             <Col xs="12" md="6">
               <ImageZoom
+              shouldReplaceImage="true"
                   image={{
                     src: `${process.env.PUBLIC_URL}/scenario-small.jpg`,
                     alt: 'Scenario',
@@ -457,6 +476,7 @@ export const BrowserEx = () => (
             </Col>
             <Col xs="12" md="6">
               <ImageZoom
+              shouldReplaceImage="true"
               image={{
                 src: `${process.env.PUBLIC_URL}/scenario2-small.jpg`,
                 alt: 'scenario 2',
@@ -476,6 +496,7 @@ export const BrowserEx = () => (
         <Row>
             <Col xs="12" md="4">
               <ImageZoom
+              shouldReplaceImage="true"
                   image={{
                     src: `${process.env.PUBLIC_URL}/scenario-docs.jpg`,
                     alt: 'Scenario-docs',
@@ -490,6 +511,7 @@ export const BrowserEx = () => (
             </Col>
             <Col xs="12" md="4">
               <ImageZoom
+              shouldReplaceImage="true"
               image={{
                 src: `${process.env.PUBLIC_URL}/scenario-docs2.jpg`,
                 alt: 'scenario-docs 2',
@@ -504,6 +526,7 @@ export const BrowserEx = () => (
             </Col>
             <Col xs="12" md="4">
               <ImageZoom
+              shouldReplaceImage="true"
               image={{
                 src: `${process.env.PUBLIC_URL}/scenario-docs3.jpg`,
                 alt: 'scenario-docs 3',
@@ -518,6 +541,7 @@ export const BrowserEx = () => (
             </Col>
             <Col xs="12" md="4">
               <ImageZoom
+              shouldReplaceImage="true"
               image={{
                 src: `${process.env.PUBLIC_URL}/scenario-docs4.jpg`,
                 alt: 'scenario-docs 4',
@@ -532,6 +556,7 @@ export const BrowserEx = () => (
             </Col>
             <Col xs="12" md="4">
               <ImageZoom
+              shouldReplaceImage="true"
               image={{
                 src: `${process.env.PUBLIC_URL}/scenario-docs5.jpg`,
                 alt: 'scenario-docs 5',
@@ -546,6 +571,7 @@ export const BrowserEx = () => (
             </Col>
             <Col xs="12" md="4">
               <ImageZoom
+              shouldReplaceImage="true"
               image={{
                 src: `${process.env.PUBLIC_URL}/scenario-docs6.jpg`,
                 alt: 'scenario-docs 6',
@@ -572,6 +598,7 @@ export const BrowserEx = () => (
         <p>After having a more or less clear idea of what we can and we can’t 
           do I started working on a few sketches, wireframes.</p>
           <ImageZoom
+          shouldReplaceImage="true"
               image={{
                 src: `${process.env.PUBLIC_URL}/wireframes-small.jpg`,
                 alt: 'scenario-docs 6',
@@ -589,4 +616,222 @@ export const BrowserEx = () => (
       </Col>
     </Row>
   </div>
+);
+
+export const Orange = () => (
+  <>
+  <h2>Orange Cash</h2>
+    <p className="details">Client: Orange <br />
+    Role: Sr UX/UI Designer<br />
+    Orange, 2015</p>
+    <hr className="thick"/>
+    <Row>
+      <Col xs="12" md="8">
+        <h3>The brief</h3>
+        <p>Create an app that will be available for Orange customers that allows 
+          users to make payments directly from their mobile without the need of 
+          using their ‘real’ credit cards. </p>
+      </Col>
+      <Col xs="12" md="8">
+        <h3>Gathering requirements</h3>
+        <p>During the initial meetings with the team I realised this was going to be 
+          too big to handle as a whole. We had four months to deliver a first mvp 
+          and no clear idea on what to tackle first.<br/>
+          I proposed we split the work into four parts:</p>
+        <p><b>Awareness:</b> How Orange advertises its new product to their existent customers.<br/>
+        <b>Activation:</b> All the different steps users have go through in order to start paying for goods.<br/>
+        <b>Use:</b> Add money to their accounts, pay.<br/>
+        <b>Manage:</b> Everything related to users accounts, help, access to customer service</p>
+        <ImageZoom
+        shouldReplaceImage="true"
+            image={{
+              src: `${process.env.PUBLIC_URL}/requirements.jpg`,
+              alt: 'requirements',
+              className: 'img',
+              style: { width: '100%' }
+            }}
+            zoomImage={{
+              src: `${process.env.PUBLIC_URL}/requirements.jpg`,
+              alt: 'requirements'
+            }}
+          />
+        <p style={{marginTop:'1rem'}}>As I mentioned before this project was so big I’m just going to show how 
+          I worked the activation case. There are two different journeys depending on 
+          what network users are on. Naturally, if users are on Orange network the 
+          authentication will take less time and fewer steps, this is because it’s 
+          easier to verify their identity, phone number and device.</p>
+        <p>On wifi, we need users to actively participate in the authentication process. 
+          Answering security questions and giving us their Orange customer information 
+          so we can match with our database.</p>
+          <ImageZoom
+          shouldReplaceImage="true"
+            image={{
+              src: `${process.env.PUBLIC_URL}/auth.jpg`,
+              alt: 'auth',
+              className: 'img',
+              style: { width: '100%' }
+            }}
+            zoomImage={{
+              src: `${process.env.PUBLIC_URL}/auth.jpg`,
+              alt: 'auth'
+            }}
+          />
+          <p>After we agreed on the first use case, I delivered some basic wireframes. 
+            Given the little time we had I considered it was essential that every person 
+            who was part of the project worked on their part at the same time I was 
+            delivering the first sketches. </p>
+      </Col>
+      <Col xs="12" md="8">
+        <h3>Testing</h3>
+        <p>As this app would only be available in France and Spain, 
+          I only participated on the prototype and script making and not facilitating the sessions.<br/>
+          French and Spanish researchers tested the prototype with 9 people.</p>
+          <ImageZoom
+          shouldReplaceImage="true"
+            image={{
+              src: `${process.env.PUBLIC_URL}/welcome-small.jpg`,
+              alt: 'welcome',
+              className: 'img',
+              style: { width: '100%' }
+            }}
+            zoomImage={{
+              src: `${process.env.PUBLIC_URL}/welcome.jpg`,
+              alt: 'welcome'
+            }}
+          />
+      </Col>
+      <Col xs="12" md="8">
+        <h3>Visuals</h3>
+        <p>I worked on all the key screens of the app. Created a visual language that I 
+          put in guidelines documents so other designers can help out in case we needed 
+          a hand (and yes, we did)</p>
+          <Row style={{marginBottom:'1rem'}}>
+            <Col xs="12" md="4">
+              <ImageZoom
+                shouldReplaceImage="true"
+                  image={{
+                    src: `${process.env.PUBLIC_URL}/ikea-small.jpg`,
+                    alt: 'ikea',
+                    className: 'img',
+                    style: { width: '100%' }
+                  }}
+                  zoomImage={{
+                    src: `${process.env.PUBLIC_URL}/ikea.jpg`,
+                    alt: 'ikea'
+                  }}
+              />
+            </Col>
+            <Col xs="12" md="4">
+              <ImageZoom
+                shouldReplaceImage="true"
+                  image={{
+                    src: `${process.env.PUBLIC_URL}/35000-small.jpg`,
+                    alt: '35000',
+                    className: 'img',
+                    style: { width: '100%' }
+                  }}
+                  zoomImage={{
+                    src: `${process.env.PUBLIC_URL}/35000.jpg`,
+                    alt: '35000'
+                  }}
+              />
+            </Col>
+            <Col xs="12" md="4">
+              <ImageZoom
+                shouldReplaceImage="true"
+                  image={{
+                    src: `${process.env.PUBLIC_URL}/ikea-small.jpg`,
+                    alt: 'ikea',
+                    className: 'img',
+                    style: { width: '100%' }
+                  }}
+                  zoomImage={{
+                    src: `${process.env.PUBLIC_URL}/ikea.jpg`,
+                    alt: 'ikea'
+                  }}
+              />
+            </Col>
+          </Row>
+          <p>For the illustrations I had a few meetings with a professional illustrator 
+            and we agreed on the style</p>
+            <ImageZoom
+                shouldReplaceImage="true"
+                  image={{
+                    src: `${process.env.PUBLIC_URL}/bonjour-small.jpg`,
+                    alt: 'bonjour',
+                    className: 'img',
+                    style: { width: '100%' }
+                  }}
+                  zoomImage={{
+                    src: `${process.env.PUBLIC_URL}/bonjour.jpg`,
+                    alt: 'bonjour'
+                  }}
+              />
+          <Row style={{marginTop:'1rem'}}>
+            <Col xs="12" md="7">
+              <ImageZoom
+                shouldReplaceImage="true"
+                  image={{
+                    src: `${process.env.PUBLIC_URL}/bag-small.jpg`,
+                    alt: 'bag',
+                    className: 'img',
+                    style: { width: '100%' }
+                  }}
+                  zoomImage={{
+                    src: `${process.env.PUBLIC_URL}/bag.jpg`,
+                    alt: 'bag'
+                  }}
+              />
+            </Col>
+            <Col xs="12" md="5">
+              <ImageZoom
+                shouldReplaceImage="true"
+                  image={{
+                    src: `${process.env.PUBLIC_URL}/icecream-small.jpg`,
+                    alt: 'icecream',
+                    className: 'img',
+                    style: { width: '100%' }
+                  }}
+                  zoomImage={{
+                    src: `${process.env.PUBLIC_URL}/icecream.jpg`,
+                    alt: 'icecream'
+                  }}
+              />
+            </Col>  
+          </Row>
+          <Row style={{marginTop:'1rem'}}>
+            <Col xs="12" md="5">
+              <ImageZoom
+                shouldReplaceImage="true"
+                  image={{
+                    src: `${process.env.PUBLIC_URL}/medi-small.jpg`,
+                    alt: 'medi',
+                    className: 'img',
+                    style: { width: '100%' }
+                  }}
+                  zoomImage={{
+                    src: `${process.env.PUBLIC_URL}/medi.jpg`,
+                    alt: 'medi'
+                  }}
+              />
+            </Col>
+            <Col xs="12" md="7">
+              <ImageZoom
+                shouldReplaceImage="true"
+                  image={{
+                    src: `${process.env.PUBLIC_URL}/champers-small.jpg`,
+                    alt: 'champers',
+                    className: 'img',
+                    style: { width: '100%' }
+                  }}
+                  zoomImage={{
+                    src: `${process.env.PUBLIC_URL}/champers.jpg`,
+                    alt: 'champers'
+                  }}
+              />
+            </Col>  
+          </Row>
+        </Col>
+    </Row>    
+  </>
 );

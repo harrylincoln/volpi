@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import { Container, Row, Col } from 'reactstrap';
 import NavBar from './navbar';
-import {UCA, BrowserEx} from './works';
+import {UCA, BrowserEx, Orange} from './works';
 
 function Home() {
   return (
@@ -11,8 +11,9 @@ function Home() {
       <Router>
         <div>
         <NavBar />
-          <Route exact path="/" component={UCA} />
-          <Route path="/browser-extension" component={BrowserEx} />
+        <Route exact path="/" component={UCA} />
+        <Route path="/browser-extension" component={BrowserEx} />
+        <Route path="/orange-cash" component={Orange} />
           {/* Desktop only */}
           <Row className="mt-1 d-none d-md-block pb-5">
             <Col>
@@ -24,6 +25,9 @@ function Home() {
                 </li>
                 <li>
                   <Link to="/browser-extension">Browser Extension</Link>
+                </li>
+                <li>
+                  <Link to="/orange-cash">Orange Cash</Link>
                 </li>
               </ul>
             </Col>

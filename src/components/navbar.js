@@ -43,6 +43,9 @@ export default class NavBar extends React.Component {
                   <NavLink href="/browser-extension">Browser extension</NavLink>
                 </NavItem>
                 <NavItem>
+                  <NavLink href="/orange-cash">Orange Cash</NavLink>
+                </NavItem>
+                <NavItem>
                 <NavLink href="https://www.linkedin.com/in/anabellavolpi/">LinkedIn</NavLink>
                 </NavItem>
                 {/* <UncontrolledDropdown nav inNavbar>
@@ -71,6 +74,9 @@ export default class NavBar extends React.Component {
                     </NavItem>
                     <NavItem>
                       <Link to="/browser-extension">Browser Extension</Link>
+                    </NavItem>
+                    <NavItem>
+                      <Link to="/orange-cash">Orange Cash</Link>
                     </NavItem>
                     </DropdownItem>
                   </DropdownMenu>
