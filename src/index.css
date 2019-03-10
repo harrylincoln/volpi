@@ -126,3 +126,7 @@ h1.name-title {
 .section-block {
   margin-top: 1.5rem
 }
+
+.dropdown-item.active, .dropdown-item:active {
+  background-color: transparent
+}
