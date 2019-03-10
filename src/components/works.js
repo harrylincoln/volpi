@@ -35,7 +35,7 @@ export const UCA = () => (
             I needed them to tell me what their users were like before I could come up with my own research plan. 
           </p>
           <ImageZoom
-          shouldReplaceImage="true"
+          shouldReplaceImage={true}
             image={{
               src: `${process.env.PUBLIC_URL}/postit1-small.jpg`,
               alt: 'Gathering requirements 1',
@@ -50,7 +50,7 @@ export const UCA = () => (
           <Row style={{marginTop: '1.35rem'}}>
             <Col xs="12" md="7">
               <ImageZoom
-              shouldReplaceImage="true"
+              shouldReplaceImage={true}
               image={{
                 src: `${process.env.PUBLIC_URL}/postit2-small.jpg`,
                 alt: 'Gathering requirements 2',
@@ -65,7 +65,7 @@ export const UCA = () => (
             </Col>
             <Col xs="12" md="5">
               <ImageZoom
-              shouldReplaceImage="true"
+              shouldReplaceImage={true}
               image={{
                 src: `${process.env.PUBLIC_URL}/postit3-small.jpg`,
                 alt: 'Gathering requirements 3',
@@ -91,7 +91,7 @@ export const UCA = () => (
           </ul>
           <p>The Survey allowed us to quickly target different needs depending on career level.</p>
               <ImageZoom
-              shouldReplaceImage="true"
+              shouldReplaceImage={true}
               image={{
                 src: `${process.env.PUBLIC_URL}/users.jpg`,
                 alt: 'Group of users',
@@ -107,7 +107,7 @@ export const UCA = () => (
             <Row style={{marginTop: '1.35rem'}}>
               <Col xs="12" md="6">
                 <ImageZoom
-                shouldReplaceImage="true"
+                shouldReplaceImage={true}
                     image={{
                       src: `${process.env.PUBLIC_URL}/user-values.jpg`,
                       alt: 'User values',
@@ -123,7 +123,7 @@ export const UCA = () => (
               </Col>
               <Col xs="12" md="6">
                 <ImageZoom
-                shouldReplaceImage="true"
+                shouldReplaceImage={true}
                 image={{
                   src: `${process.env.PUBLIC_URL}/user-values2.jpg`,
                   alt: 'User values 2',
@@ -151,7 +151,7 @@ export const UCA = () => (
             <Row>
               <Col xs="12" md="6">
                 <ImageZoom
-                shouldReplaceImage="true"
+                shouldReplaceImage={true}
                     image={{
                       src: `${process.env.PUBLIC_URL}/existing-user-flow-small.jpg`,
                       alt: 'Existing user flow',
@@ -166,7 +166,7 @@ export const UCA = () => (
               </Col>
               <Col xs="12" md="6">
                 <ImageZoom
-                shouldReplaceImage="true"
+                shouldReplaceImage={true}
                 image={{
                   src: `${process.env.PUBLIC_URL}/new-user-flow-small.jpg`,
                   alt: 'New user flow',
@@ -204,7 +204,7 @@ export const UCA = () => (
             <Row>
               <Col xs="12" md="4">
                 <ImageZoom
-                shouldReplaceImage="true"
+                shouldReplaceImage={true}
                     image={{
                       src: `${process.env.PUBLIC_URL}/proto-small.jpg`,
                       alt: 'Proto',
@@ -219,7 +219,7 @@ export const UCA = () => (
               </Col>
               <Col xs="12" md="4">
                 <ImageZoom
-                shouldReplaceImage="true"
+                shouldReplaceImage={true}
                 image={{
                   src: `${process.env.PUBLIC_URL}/proto2-small.jpg`,
                   alt: 'Proto 2',
@@ -234,7 +234,7 @@ export const UCA = () => (
             </Col>
             <Col xs="12" md="4">
                 <ImageZoom
-                shouldReplaceImage="true"
+                shouldReplaceImage={true}
                 image={{
                   src: `${process.env.PUBLIC_URL}/proto3-small.jpg`,
                   alt: 'Proto 3',
@@ -253,7 +253,7 @@ export const UCA = () => (
             <h3>A/B Testing</h3>
             <p>We tested different copy, promotional messages and UI.</p>
             <ImageZoom
-            shouldReplaceImage="true"
+            shouldReplaceImage={true}
               image={{
                 src: `${process.env.PUBLIC_URL}/abtest-small.jpg`,
                 alt: 'A/B Test',
@@ -273,7 +273,7 @@ export const UCA = () => (
             <h3>Deliverables</h3>
             <p>I delivered all design specs and paired with developers to make sure everything was implemented the way I designed it.</p>
             <ImageZoom
-            shouldReplaceImage="true"
+            shouldReplaceImage={true}
               image={{
                 src: `${process.env.PUBLIC_URL}/deliverables-small.jpg`,
                 alt: 'Deliverables',
@@ -339,7 +339,7 @@ export const BrowserEx = () => (
           </ul>
         </p>
         <ImageZoom
-        shouldReplaceImage="true"
+        shouldReplaceImage={true}
               image={{
                 src: `${process.env.PUBLIC_URL}/requirement-small.jpg`,
                 alt: 'requirement',
@@ -361,7 +361,7 @@ export const BrowserEx = () => (
           <Row>
               <Col xs="12" md="4">
                 <ImageZoom
-                shouldReplaceImage="true"
+                shouldReplaceImage={true}
                     image={{
                       src: `${process.env.PUBLIC_URL}/persona-small.jpg`,
                       alt: 'persona',
@@ -376,7 +376,7 @@ export const BrowserEx = () => (
               </Col>
               <Col xs="12" md="4">
                 <ImageZoom
-                shouldReplaceImage="true"
+                shouldReplaceImage={true}
                 image={{
                   src: `${process.env.PUBLIC_URL}/persona2-small.jpg`,
                   alt: 'persona 2',
@@ -391,7 +391,7 @@ export const BrowserEx = () => (
             </Col>
             <Col xs="12" md="4">
                 <ImageZoom
-                shouldReplaceImage="true"
+                shouldReplaceImage={true}
                 image={{
                   src: `${process.env.PUBLIC_URL}/persona3-small.jpg`,
                   alt: 'persona 3',
@@ -409,7 +409,7 @@ export const BrowserEx = () => (
       <Col xs="12" md="8" style={{marginTop: '1rem'}}>
         <h5>Empathy maps</h5>
         <ImageZoom
-        shouldReplaceImage="true"
+        shouldReplaceImage={true}
           image={{
             src: `${process.env.PUBLIC_URL}/empathy-small.jpg`,
             alt: 'empathy',
@@ -426,7 +426,7 @@ export const BrowserEx = () => (
       <Col xs="12" md="8" style={{marginTop: '1rem'}}>
         <h5>Scenarios and User journeys</h5>
         <ImageZoom
-        shouldReplaceImage="true"
+        shouldReplaceImage={true}
           image={{
             src: `${process.env.PUBLIC_URL}/main-persona-small.jpg`,
             alt: 'main-persona',
@@ -461,7 +461,7 @@ export const BrowserEx = () => (
         <Row>
             <Col xs="12" md="6">
               <ImageZoom
-              shouldReplaceImage="true"
+              shouldReplaceImage={true}
                   image={{
                     src: `${process.env.PUBLIC_URL}/scenario-small.jpg`,
                     alt: 'Scenario',
@@ -476,7 +476,7 @@ export const BrowserEx = () => (
             </Col>
             <Col xs="12" md="6">
               <ImageZoom
-              shouldReplaceImage="true"
+              shouldReplaceImage={true}
               image={{
                 src: `${process.env.PUBLIC_URL}/scenario2-small.jpg`,
                 alt: 'scenario 2',
@@ -496,7 +496,7 @@ export const BrowserEx = () => (
         <Row>
             <Col xs="12" md="4">
               <ImageZoom
-              shouldReplaceImage="true"
+              shouldReplaceImage={true}
                   image={{
                     src: `${process.env.PUBLIC_URL}/scenario-docs.jpg`,
                     alt: 'Scenario-docs',
@@ -511,7 +511,7 @@ export const BrowserEx = () => (
             </Col>
             <Col xs="12" md="4">
               <ImageZoom
-              shouldReplaceImage="true"
+              shouldReplaceImage={true}
               image={{
                 src: `${process.env.PUBLIC_URL}/scenario-docs2.jpg`,
                 alt: 'scenario-docs 2',
@@ -526,7 +526,7 @@ export const BrowserEx = () => (
             </Col>
             <Col xs="12" md="4">
               <ImageZoom
-              shouldReplaceImage="true"
+              shouldReplaceImage={true}
               image={{
                 src: `${process.env.PUBLIC_URL}/scenario-docs3.jpg`,
                 alt: 'scenario-docs 3',
@@ -541,7 +541,7 @@ export const BrowserEx = () => (
             </Col>
             <Col xs="12" md="4">
               <ImageZoom
-              shouldReplaceImage="true"
+              shouldReplaceImage={true}
               image={{
                 src: `${process.env.PUBLIC_URL}/scenario-docs4.jpg`,
                 alt: 'scenario-docs 4',
@@ -556,7 +556,7 @@ export const BrowserEx = () => (
             </Col>
             <Col xs="12" md="4">
               <ImageZoom
-              shouldReplaceImage="true"
+              shouldReplaceImage={true}
               image={{
                 src: `${process.env.PUBLIC_URL}/scenario-docs5.jpg`,
                 alt: 'scenario-docs 5',
@@ -571,7 +571,7 @@ export const BrowserEx = () => (
             </Col>
             <Col xs="12" md="4">
               <ImageZoom
-              shouldReplaceImage="true"
+              shouldReplaceImage={true}
               image={{
                 src: `${process.env.PUBLIC_URL}/scenario-docs6.jpg`,
                 alt: 'scenario-docs 6',
@@ -598,7 +598,7 @@ export const BrowserEx = () => (
         <p>After having a more or less clear idea of what we can and we can’t 
           do I started working on a few sketches, wireframes.</p>
           <ImageZoom
-          shouldReplaceImage="true"
+          shouldReplaceImage={true}
               image={{
                 src: `${process.env.PUBLIC_URL}/wireframes-small.jpg`,
                 alt: 'scenario-docs 6',
@@ -643,7 +643,7 @@ export const Orange = () => (
         <b>Use:</b> Add money to their accounts, pay.<br/>
         <b>Manage:</b> Everything related to users accounts, help, access to customer service</p>
         <ImageZoom
-        shouldReplaceImage="true"
+        shouldReplaceImage={true}
             image={{
               src: `${process.env.PUBLIC_URL}/requirements.jpg`,
               alt: 'requirements',
@@ -664,7 +664,7 @@ export const Orange = () => (
           Answering security questions and giving us their Orange customer information 
           so we can match with our database.</p>
           <ImageZoom
-          shouldReplaceImage="true"
+          shouldReplaceImage={true}
             image={{
               src: `${process.env.PUBLIC_URL}/auth.jpg`,
               alt: 'auth',
@@ -687,7 +687,7 @@ export const Orange = () => (
           I only participated on the prototype and script making and not facilitating the sessions.<br/>
           French and Spanish researchers tested the prototype with 9 people.</p>
           <ImageZoom
-          shouldReplaceImage="true"
+          shouldReplaceImage={true}
             image={{
               src: `${process.env.PUBLIC_URL}/welcome-small.jpg`,
               alt: 'welcome',
@@ -718,7 +718,7 @@ export const Orange = () => (
             </Col>
             <Col xs="12" md="4" style={{marginBottom:'1rem'}}>
               <ImageZoom
-                shouldReplaceImage="true"
+                shouldReplaceImage={true}
                   image={{
                     src: `${process.env.PUBLIC_URL}/35000-small.jpg`,
                     alt: '35000',
@@ -733,7 +733,7 @@ export const Orange = () => (
             </Col>
             <Col xs="12" md="4" style={{marginBottom:'1rem'}}>
               <ImageZoom
-                shouldReplaceImage="true"
+                shouldReplaceImage={true}
                   image={{
                     src: `${process.env.PUBLIC_URL}/ikea-small.jpg`,
                     alt: 'ikea',
@@ -751,7 +751,7 @@ export const Orange = () => (
             and we agreed on the style</p>
             <ImageZoom
             style={{marginBottom:'1rem'}}
-                shouldReplaceImage="true"
+                shouldReplaceImage={true}
                   image={{
                     src: `${process.env.PUBLIC_URL}/bonjour-small.jpg`,
                     alt: 'bonjour',
@@ -766,7 +766,7 @@ export const Orange = () => (
           <Row style={{marginTop:'1rem'}}>
             <Col xs="12" md="7" style={{marginBottom:'1rem'}}>
               <ImageZoom
-                shouldReplaceImage="true"
+                shouldReplaceImage={true}
                   image={{
                     src: `${process.env.PUBLIC_URL}/bag-small.jpg`,
                     alt: 'bag',
@@ -781,7 +781,7 @@ export const Orange = () => (
             </Col>
             <Col xs="12" md="5" style={{marginBottom:'1rem'}}>
               <ImageZoom
-                shouldReplaceImage="true"
+                shouldReplaceImage={true}
                   image={{
                     src: `${process.env.PUBLIC_URL}/icecream-small.jpg`,
                     alt: 'icecream',
@@ -798,7 +798,7 @@ export const Orange = () => (
           <Row>
             <Col xs="12" md="5" style={{marginBottom:'1rem'}}>
               <ImageZoom
-                shouldReplaceImage="true"
+                shouldReplaceImage={true}
                   image={{
                     src: `${process.env.PUBLIC_URL}/medi-small.jpg`,
                     alt: 'medi',
@@ -813,7 +813,7 @@ export const Orange = () => (
             </Col>
             <Col xs="12" md="7" style={{marginBottom:'1rem'}}>
               <ImageZoom
-                shouldReplaceImage="true"
+                shouldReplaceImage={true}
                   image={{
                     src: `${process.env.PUBLIC_URL}/champers-small.jpg`,
                     alt: 'champers',
