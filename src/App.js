@@ -35,7 +35,7 @@ class App extends React.Component {
       try {
         await axios.get(`https://vxaew3az9d.execute-api.eu-central-1.amazonaws.com/production/?pass=${this.state.value}`);
         const { cookies } = this.props;
-        cookies.set('loggedIn', 'true', { path: '/', Expires: 10800}); // 3 hours then resubmit
+        cookies.set('loggedIn', 'true', { path: '/', maxAge: 10800}); // 3 hours then nullify
         window.location.reload();
       } catch(e) {
         this.setState({value: '', fadeIn: true});

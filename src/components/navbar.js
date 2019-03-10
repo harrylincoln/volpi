@@ -40,7 +40,7 @@ export default class NavBar extends React.Component {
                   <NavLink href="/">Universal Claim App</NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink href="/browser-extension">Universal Claim App</NavLink>
+                  <NavLink href="/browser-extension">Browser extension</NavLink>
                 </NavItem>
                 <NavItem>
                 <NavLink href="https://www.linkedin.com/in/anabellavolpi/">LinkedIn</NavLink>
