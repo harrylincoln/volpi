@@ -280,19 +280,69 @@ export const UCA = () => (
           <Col xs="12" className="section-block">
             <h3>Deliverables</h3>
             <p>I delivered all design specs and paired with developers to make sure everything was implemented the way I designed it.</p>
-            <ImageZoom
-            shouldReplaceImage={true}
-              image={{
-                src: `${process.env.PUBLIC_URL}/deliverables-small.jpg`,
-                alt: 'Deliverables',
-                className: 'img',
-                style: { width: '100%' }
-              }}
-              zoomImage={{
-                src: `${process.env.PUBLIC_URL}/deliverables.jpg`,
-                alt: 'Deliverables'
-              }}
-            />
+            <Row>
+                <Col xs="12" md="6">
+                  <ImageZoom
+                  shouldReplaceImage={true}
+                      image={{
+                        src: `${process.env.PUBLIC_URL}/uca-deliverable1-small.jpg`,
+                        alt: 'uca-deliverable1',
+                        className: 'img',
+                        style: { width: '100%' }
+                      }}
+                      zoomImage={{
+                        src: `${process.env.PUBLIC_URL}/uca-deliverable1.jpg`,
+                        alt: 'uca-deliverable1'
+                      }}
+                    />
+                </Col>
+                <Col xs="12" md="6">
+                  <ImageZoom
+                  shouldReplaceImage={true}
+                      image={{
+                        src: `${process.env.PUBLIC_URL}/uca-deliverable2-small.jpg`,
+                        alt: 'uca-deliverable2-small',
+                        className: 'img',
+                        style: { width: '100%' }
+                      }}
+                      zoomImage={{
+                        src: `${process.env.PUBLIC_URL}/uca-deliverable2.jpg`,
+                        alt: 'uca-deliverable2'
+                      }}
+                    />
+                </Col>
+                <Col xs="12">
+                <ImageZoom
+                  shouldReplaceImage={true}
+                      image={{
+                        src: `${process.env.PUBLIC_URL}/uca-deliverable3-small.jpg`,
+                        alt: 'uca-deliverable3-small',
+                        className: 'img',
+                        style: { width: '100%' }
+                      }}
+                      zoomImage={{
+                        src: `${process.env.PUBLIC_URL}/uca-deliverable3.jpg`,
+                        alt: 'uca-deliverable3'
+                      }}
+                    />
+                </Col>
+                <Col xs="12">
+                <ImageZoom
+                  shouldReplaceImage={true}
+                    image={{
+                      src: `${process.env.PUBLIC_URL}/deliverables-small.jpg`,
+                      alt: 'Deliverables',
+                      className: 'img',
+                      style: { width: '100%' }
+                    }}
+                    zoomImage={{
+                      src: `${process.env.PUBLIC_URL}/deliverables.jpg`,
+                      alt: 'Deliverables'
+                    }}
+                  />
+                </Col>
+              </Row>
+
           </Col>
         </Col>
       </Row>
@@ -619,6 +669,56 @@ export const BrowserEx = () => (
               }}
             />
       </Col>
+      <Col xs="12" md="8" className="section-block">
+        <h3>Deliverables</h3>
+        <Row>
+            <Col xs="12" md="6">
+              <ImageZoom
+              shouldReplaceImage={true}
+                  image={{
+                    src: `${process.env.PUBLIC_URL}/browser-deliverable1-small.jpg`,
+                    alt: 'browser-deliverable1',
+                    className: 'img',
+                    style: { width: '100%' }
+                  }}
+                  zoomImage={{
+                    src: `${process.env.PUBLIC_URL}/browser-deliverable1.jpg`,
+                    alt: 'browser-deliverable1'
+                  }}
+                />
+            </Col>
+            <Col xs="12" md="6">
+              <ImageZoom
+              shouldReplaceImage={true}
+                  image={{
+                    src: `${process.env.PUBLIC_URL}/browser-deliverable2-small.jpg`,
+                    alt: 'browser-deliverable2-small',
+                    className: 'img',
+                    style: { width: '100%' }
+                  }}
+                  zoomImage={{
+                    src: `${process.env.PUBLIC_URL}/browser-deliverable2.jpg`,
+                    alt: 'browser-deliverable2'
+                  }}
+                />
+            </Col>
+            <Col xs="12">
+            <ImageZoom
+              shouldReplaceImage={true}
+                  image={{
+                    src: `${process.env.PUBLIC_URL}/browser-deliverable3-small.jpg`,
+                    alt: 'browser-deliverable3-small',
+                    className: 'img',
+                    style: { width: '100%' }
+                  }}
+                  zoomImage={{
+                    src: `${process.env.PUBLIC_URL}/browser-deliverable3.jpg`,
+                    alt: 'browser-deliverable3'
+                  }}
+                />
+            </Col>
+          </Row>
+      </Col>
     </Row>
   </div>
 );
@@ -710,48 +810,16 @@ export const Orange = () => (
         <p>I worked on all the key screens of the app. Created a visual language that I 
           put in guidelines documents so other designers can help out in case we needed 
           a hand (and yes, we did)</p>
-          <Row>
-            <Col xs="12" md="4" style={{marginBottom:'1rem'}}>
+          <Col xs="12" style={{marginBottom:'1rem'}}>
               <ImageZoom
                   image={{
-                    src: `${process.env.PUBLIC_URL}/hand.jpg`,
+                    src: `${process.env.PUBLIC_URL}/hand-edit.jpg`,
                     alt: 'ikea',
                     className: 'img',
                     style: { width: '100%' }
                   }}
               />
-            </Col>
-            <Col xs="12" md="4" style={{marginBottom:'1rem'}}>
-              <ImageZoom
-                shouldReplaceImage={true}
-                  image={{
-                    src: `${process.env.PUBLIC_URL}/35000-small.jpg`,
-                    alt: '35000',
-                    className: 'img',
-                    style: { width: '100%' }
-                  }}
-                  zoomImage={{
-                    src: `${process.env.PUBLIC_URL}/35000.jpg`,
-                    alt: '35000'
-                  }}
-              />
-            </Col>
-            <Col xs="12" md="4" style={{marginBottom:'1rem'}}>
-              <ImageZoom
-                shouldReplaceImage={true}
-                  image={{
-                    src: `${process.env.PUBLIC_URL}/ikea-small.jpg`,
-                    alt: 'ikea',
-                    className: 'img',
-                    style: { width: '100%' }
-                  }}
-                  zoomImage={{
-                    src: `${process.env.PUBLIC_URL}/ikea.jpg`,
-                    alt: 'ikea'
-                  }}
-              />
-            </Col>
-          </Row>
+          </Col>
           <p>For the illustrations I had a few meetings with a professional illustrator 
             and we agreed on the style</p>
             <ImageZoom
